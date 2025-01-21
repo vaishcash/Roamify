@@ -12,9 +12,9 @@ import "./index.css";
 export const MainContent = () => {
   return (
     <>
-      <section className="section-about">
+      <section className="section-about font-new">
         <HeadingSecondary
-          content="Exciting tour for adventure people"
+          content="Fuel Your Wanderlust, Ignite Your Adventure!"
           addClass="py-2 mb-12 text-center"
         />
         <div className="flex-center max-w-[96rem] max-lg:flex-col-reverse mx-auto py-4 md:gap-12 lg:gap-10 mt-8">

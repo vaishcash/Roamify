@@ -26,3 +26,7 @@ body {
 .form-label {
   @apply font-bold capitalize;
 }
+
+.font-new {
+  font-family: "New Tegomin", sans-serif;
+}
