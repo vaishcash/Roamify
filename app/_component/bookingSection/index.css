@@ -1,0 +1,84 @@
+.book {
+  background: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.89) 50%,
+      transparent 50%
+    ),
+    url("/assets/header-bg.jpg");
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .book {
+    background: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.89) 60%,
+        transparent 60%
+      ),
+      url("/assets/header-bg.jpg");
+  }
+}
+@media (max-width: 950px) {
+  .book {
+    background: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.89) 66%,
+        transparent 66%
+      ),
+      url("/assets/header-bg.jpg");
+  }
+}
+@media (max-width: 700px) {
+  .book {
+    background: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.89) 75%,
+        transparent 75%
+      ),
+      url("/assets/header-bg.jpg");
+  }
+}
+@media (max-width: 640px) {
+  .book {
+    background: white;
+  }
+}
+
+.form .form-input {
+  @apply mt-4 w-full sm:w-10/12 block;
+}
+.form .form-label {
+  @apply text-sm;
+  transition: all 0.3s;
+}
+.label-prop {
+  @apply ml-8 block mt-1;
+}
+.form .form-input:placeholder-shown + .form-label {
+  @apply opacity-0 invisible -translate-y-10;
+}
+.form-radio {
+  @apply absolute inline-block ml-8;
+}
+.size-radio {
+  @apply w-6 h-6 border-[4px] border-green-600 rounded-full absolute -ml-8 -mt-[3px];
+  transition: all 0.2s ease-in;
+}
+.form-label.form-radio {
+  @apply cursor-pointer;
+}
+.size-radio::after {
+  content: "";
+  @apply h-[0.8rem] w-[0.8rem] block bg-green-600 rounded-full opacity-0;
+}
+.size-input {
+  @apply hidden;
+}
+
+.size-input:checked + .form-label .size-radio::after {
+  opacity: 1;
+}
+
+form .btn.form-button {
+  @apply py-3 px-8 bg-green-500 text-white after:bg-green-500;
+}
