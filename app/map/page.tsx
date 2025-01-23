@@ -58,7 +58,7 @@ function App() {
     {
       title: "Petra, Jordan",
       image:
-        "https://media.istockphoto.com/id/503263429/photo/petra-the-treasury-jordan.jpg?s=612x612&w=0&k=20&c=d0CfLjnPwHa9fWMvTCh7sf4ySmR2_vHXFuM0u-_GVHA=",
+        "https://plus.unsplash.com/premium_photo-1675700414747-d16f2bda6420?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGV0cmElMkMlMjBqb3JkYW58ZW58MHx8MHx8fDA%3D",
       description:
         "Walk through the ancient rose-colored city carved into desert cliffs.",
     },
