@@ -13,6 +13,7 @@ import {
   Star,
   Plane,
 } from "lucide-react";
+import Image from "next/image";
 
 function App() {
   const [destination, setDestination] = useState("");
@@ -225,7 +226,7 @@ function App() {
               Popular Destinations
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore some of the world's most breathtaking locations
+              Explore some of the world  most breathtaking locations
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -235,10 +236,12 @@ function App() {
                 className="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105"
               >
                 <div className="relative h-48">
-                  <img
+                  <Image
                     src={destination.image}
                     alt={destination.title}
                     className="w-full h-full object-cover"
+                    width={600}
+                    height={600}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <h3 className="absolute bottom-4 left-4 text-white font-semibold text-xl">
