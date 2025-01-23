@@ -58,7 +58,7 @@ function App() {
     {
       title: "Petra, Jordan",
       image:
-        "https://plus.unsplash.com/premium_photo-1675700414747-d16f2bda6420?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGV0cmElMkMlMjBqb3JkYW58ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1691405437666-20377ff72b70?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGV0cmElMkMlMjBqb3JkYW58ZW58MHx8MHx8fDA%3D",
       description:
         "Walk through the ancient rose-colored city carved into desert cliffs.",
     },
