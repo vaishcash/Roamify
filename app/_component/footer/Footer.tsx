@@ -1,48 +1,172 @@
-import Link from "next/link";
-import { MainIcon } from "../icon";
+
+import {  Compass,  Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPinned } from 'lucide-react';
 
 import "./index.css";
 
 export const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-slate-100 lg:min-h-[35rem] text-sm p-8">
-      <div className="footer-logo flex-center lg:min-h-80 max-lg:mb-10">
-        <MainIcon />
-      </div>
-      <div className="row flex justify-between gap-x-20 max-w-4xl mx-auto flex-wrap content-between min-h-52">
-        <div className="part ">
-          <ul className="flex gap-x-4 uppercase footer-nav-list flex-wrap">
-            <li>
-              <Link href={""}>company</Link>
-            </li>
-            <li>
-              <Link href={""}>contact us</Link>
-            </li>
-            <li>
-              <Link href={""}>careers</Link>
-            </li>
-            <li>
-              <Link href={""}>privacy</Link>
-            </li>
-            <li>
-              <Link href={""}>terms</Link>
-            </li>
-          </ul>
+    <div>
+      <footer className="bg-gray-900 text-gray-300">
+        <div className="max-w-7xl mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Company Info */}
+            <div className="space-y-4">
+              <div className="flex items-center space-x-2">
+                <Compass className="h-6 w-6 text-blue-500" />
+                <span className="text-xl font-bold text-white">
+                  Travel Planner
+                </span>
+              </div>
+              <p className="text-sm">
+                Making your travel dreams come true with expertly planned
+                adventures and unforgettable experiences.
+              </p>
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.facebook.com/"
+                  className="hover:text-blue-500 transition-colors"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://x.com/?lang=en&mx=2"
+                  className="hover:text-blue-500 transition-colors"
+                >
+                  <Twitter className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/?hl=en"
+                  className="hover:text-blue-500 transition-colors"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.youtube.com/"
+                  className="hover:text-blue-500 transition-colors"
+                >
+                  <Youtube className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Quick Links
+              </h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    Destinations
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    Travel Packages
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    Travel Insurance
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    Travel Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Support */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">Support</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    Help Center
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    FAQs
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-blue-500 transition-colors">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Contact Us
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Phone className="h-5 w-5 text-blue-500" />
+                  <span>+1 (555) 123-4567</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-blue-500" />
+                  <span>support@travelplanner.com</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <MapPinned className="h-5 w-5 text-blue-500" />
+                  <span>123 Travel Street, Adventure City, AC 12345</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-gray-800 mt-12 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-sm">
+                © 2024 Travel Planner. All rights reserved.
+              </p>
+              <div className="flex space-x-6 mt-4 md:mt-0">
+                <a
+                  href="#"
+                  className="text-sm hover:text-blue-500 transition-colors"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="#"
+                  className="text-sm hover:text-blue-500 transition-colors"
+                >
+                  Terms of Service
+                </a>
+                <a
+                  href="#"
+                  className="text-sm hover:text-blue-500 transition-colors"
+                >
+                  Cookie Policy
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="part lg:max-w-80">
-          <div className="footer-copyright-text"></div>
-          <p className="text-gray-400">
-            Build by{" "}
-            <Link className="text-white/90 footer-hover-effect" href={""}>
-              Om
-            </Link>{" "}
-            for fun and learning. Copyright © by{" "}
-            <span className="footer-hover-effect text-white/95">Om</span>, you
-            are absolutely free to use this in your production or self project
-            just dont forget to mention me.
-          </p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 };

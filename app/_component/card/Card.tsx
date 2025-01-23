@@ -2,12 +2,14 @@ import { IconType } from "react-icons";
 import { Heading, PText } from "..";
 
 import "./index.css";
+import { LucideIcon } from "lucide-react";
 
 interface Props {
-  Icons: IconType;
+  Icons: LucideIcon;
   title: string;
   description: string;
 }
+
 
 export const Card = ({ Icons, title, description }: Props) => {
   return (

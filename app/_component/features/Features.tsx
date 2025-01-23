@@ -41,6 +41,7 @@
 
 import React from "react";
 import { Card } from "..";
+
 import { Shield, Heart, Plane, ChevronFirst as FirstAid } from "lucide-react";
 
 import "./index.css";
