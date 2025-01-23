@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
-    domains: ["images.unsplash.com", "media.istockphoto.com"],
+    domains: [
+      "images.unsplash.com",
+      "media.istockphoto.com",
+      "media.istockphoto.com",
+    ],
   },
 };
