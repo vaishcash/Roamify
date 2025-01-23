@@ -5,7 +5,7 @@ import "./index.css";
 
 export const Header = () => {
   return (
-    <header className="max-w-full">
+    <header className="max-w-full ">
       <div className="logo-box text-white ">
         <MainIcon varient="white" />
       </div>
@@ -16,7 +16,7 @@ export const Header = () => {
           addClass="slide-right -ml-3"
         />
         <LinkButton
-          addClass="btn-white btn-animated mt-20"
+          addClass="btn-white btn-animated "
           url={"#section-tour"}
           btnName="Discover Our tour"
         />
