@@ -13,7 +13,7 @@ export const Card = ({ Icons, title, description }: Props) => {
   return (
     <div className="card flex-center">
       <div className="flex-center mb-8">
-        <Icons className="w-32 h-32 text-green-600" />
+        <Icons className="w-16 h-16 text-green-600" />
       </div>
       <div className="flex px-3 flex-col justify-center items-center text-center">
         {/* <Globe /> */}

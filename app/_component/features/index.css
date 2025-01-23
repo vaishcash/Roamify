@@ -1,5 +1,5 @@
 .section-feature {
-  @apply flex p-20 justify-center items-center -mt-40;
+  @apply flex p-20 justify-center items-center mt-20;
   background-image: linear-gradient(
       to right bottom,
       rgba(126, 213, 111, 0.8),

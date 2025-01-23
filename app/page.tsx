@@ -5,11 +5,13 @@ import {
   Features,
   Footer,
   Header,
-  MainContent,
+ 
   Navigation,
   Popup,
   StoriesSection,
 } from "./_component";
+import MapSection from "./map/page";
+import TripPlans from "./tripPlans/page";
 
 export default function Home() {
   return (
@@ -17,8 +19,10 @@ export default function Home() {
       <Popup />
       <Navigation />
       <Header />
-      <MainContent />
+      <MapSection />
+
       <Features />
+      <TripPlans />
       <CardsSection />
       <StoriesSection />
       <BookingSection />
