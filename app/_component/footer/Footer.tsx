@@ -2,6 +2,7 @@
 import {  Compass,  Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPinned } from 'lucide-react';
 
 import "./index.css";
+import { MainIcon } from '../icon';
 
 export const Footer = () => {
   return (
@@ -11,11 +12,10 @@ export const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <Compass className="h-6 w-6 text-blue-500" />
-                <span className="text-xl font-bold text-white">
-                  Travel Planner
-                </span>
+              <div className="  flex items-center space-x-2">
+                <MainIcon  varient="white"  />
+
+                <span className="text-xl font-bold text-white">ROAMIFY</span>
               </div>
               <p className="text-sm">
                 Making your travel dreams come true with expertly planned

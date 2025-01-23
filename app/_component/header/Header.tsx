@@ -6,7 +6,7 @@ import "./index.css";
 export const Header = () => {
   return (
     <header className="max-w-full">
-      <div className="logo-box">
+      <div className="logo-box text-white ">
         <MainIcon varient="white" />
       </div>
       <div className="text-box">
