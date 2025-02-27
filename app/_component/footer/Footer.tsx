@@ -1,8 +1,16 @@
-
-import {  Compass,  Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPinned } from 'lucide-react';
+import {
+  Compass,
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+  Mail,
+  Phone,
+  MapPinned,
+} from "lucide-react";
 
 import "./index.css";
-import { MainIcon } from '../icon';
+import { MainIcon } from "../icon";
 
 export const Footer = () => {
   return (
@@ -13,7 +21,7 @@ export const Footer = () => {
             {/* Company Info */}
             <div className="space-y-4">
               <div className="  flex items-center space-x-2">
-                <MainIcon  varient="white"  />
+                <MainIcon varient="white" />
 
                 <span className="text-xl font-bold text-white">ROAMIFY</span>
               </div>
@@ -123,11 +131,11 @@ export const Footer = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-blue-500" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>79038 15004</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-blue-500" />
-                  <span>support@travelplanner.com</span>
+                  <span>roamify@travelplanner.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPinned className="h-5 w-5 text-blue-500" />
